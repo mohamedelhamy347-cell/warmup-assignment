@@ -211,6 +211,7 @@ function getActiveTime(shiftDuration, idleTime) {
     let idleSeconds  = durationToSeconds(idleTime);
 
     let activeSeconds = shiftSeconds - idleSeconds;
+    // Active time is the shift duration minus the idle time
 
     return secondsToTime(activeSeconds);
 }
