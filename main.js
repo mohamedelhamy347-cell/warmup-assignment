@@ -170,6 +170,7 @@ function getShiftDuration(startTime, endTime) {
     let endSeconds   = timeToSeconds(endTime);
 
     let durationSeconds = endSeconds - startSeconds;
+    // Calculate the total shift duration in seconds
 
     return secondsToTime(durationSeconds);
 }
