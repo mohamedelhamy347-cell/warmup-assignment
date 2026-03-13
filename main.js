@@ -187,6 +187,7 @@ function getIdleTime(startTime, endTime) {
     let deliveryEnd   = 22 * 3600;
 
     let idleSeconds = 0;
+    // Idle time is the time spent before 8:00 AM or after 10:00 PM
 
     if (startSeconds < deliveryStart) {
         let earlyEnd = Math.min(endSeconds, deliveryStart);
